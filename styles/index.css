@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    height: 100vh;
+    padding: 20px;
+}
+
+.file-item {
+    height: 40px;
+    padding: 10px;
+    margin-right: 15px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: border 0.2s;
+}
+
+.file-item:hover {
+    border: 1px solid lightblue;
+    cursor: pointer;
+}
+
+#contextMenu {
+    position: fixed;
+    background-color: #fff;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+#contextMenu ul {
+    list-style: none;
+}
+
+#contextMenu li {
+    padding: 10px;
+    border-bottom: 1px solid lightgrey;
+    transition: background-color 0.5s;
+}
+
+#contextMenu li:last-child {
+    border: none;
+}
+#contextMenu li:hover {
+    background-color: bisque;
+    cursor: pointer;
+}
+
+.droppable {
+    border: 1px dashed forestgreen;
+}
